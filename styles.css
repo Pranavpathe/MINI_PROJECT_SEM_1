@@ -1,0 +1,314 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9; /* Light background for better contrast */
+    color: #333;
+}
+
+.quiz-btn, .login-btn {
+    display: inline-block;
+    background-color: #388E3C; /* Darker green for buttons */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px; /* Space above the button */
+    font-size: 1.1em; /* Same font size as the quiz button */
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+.quiz-btn:hover, .login-btn:hover {
+    background-color: #2E7D32; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Header styling */
+header {
+    background-color: #4CAF50; /* Darker green */
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2.2em; /* Slightly larger logo text */
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Increased gap for better spacing */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    padding: 12px 15px; /* Adjusted padding */
+    transition: background 0.3s ease, transform 0.3s;
+    border-radius: 5px;
+}
+
+.nav-links li a:hover {
+    background-color: white;
+    color: #4CAF50;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x800/?students,learning') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker overlay for better contrast */
+    padding: 50px; /* Increased padding */
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.quiz-btn {
+    background-color: #ff6f61;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em; /* Slightly larger font */
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.quiz-btn:hover {
+    background-color: #ff4435;
+    transform: scale(1.05); /* Slight lift effect on hover */
+}
+
+.login-section {
+    text-align: center;
+    margin-top: 20px; /* Adjust this if needed */
+}
+
+.login-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: -20px; /* Adjust this if needed */
+    position: relative;
+    top: -40px; /* Move the button further upward (increase negative value) */
+}
+
+.login-btn:hover {
+    background-color: #218838;
+}
+
+
+/* Streams Section */
+.streams {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.streams h2 {
+    font-size: 2.5em; /* Adjusted title size */
+    color: #4CAF50;
+    margin-bottom: 30px; /* Reduced bottom margin */
+}
+
+.stream-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adjusted gap for a more compact look */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stream-box {
+    background-color: #fff;
+    border-radius: 10px; /* Increased border radius for a softer look */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Adjusted shadow for depth */
+    padding: 20px; /* Standard padding */
+    text-align: center;
+    max-width: 32%; /* Compact width */
+    height: 320px; /* Height reduced for better compactness */
+    transition: transform 0.3s, box-shadow 0.3s; /* Added transition for shadow */
+}
+
+.stream-box:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.stream-box img {
+    width: 80%; /* Decreased image width for compactness */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Fixed height for consistency */
+    border-radius: 10px; /* Standard border radius */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.stream-box h3 {
+    font-size: 1.5em; /* Further reduced heading size */
+    margin-top: 8px; /* Adjusted margin */
+    color: #333;
+}
+
+.stream-box p {
+    font-size: 0.9em; /* Reduced font size */
+    color: #666;
+    margin: 8px 0; /* Adjusted margin */
+}
+
+/* Button styling for View Roadmap */
+.btn {
+    background-color: #4CAF50; /* Consistent button color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* To keep the button inline */
+    margin-top: 10px; /* Margin to separate from text */
+}
+
+.btn:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px; /* Limit the width for larger screens */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+    overflow-y: auto; /* Enable scrolling */
+    max-height: 70vh; /* Limit the height */
+}
+
+
+/* Styling for quiz questions */
+.question {
+    background-color: #f9f9f9; /* Light background for questions */
+    border: 1px solid #ddd; /* Border for definition */
+    border-radius: 5px;
+    margin: 10px 0; /* Spacing between questions */
+    padding: 15px; /* Inner spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Space above the button */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#results {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #4CAF50;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .stream-grid {
+        flex-direction: column; /* Stack on smaller screens */
+        gap: 10px; /* Reduced gap */
+    }
+
+    .stream-box {
+        max-width: 100%; /* Full width on small screens */
+        height: auto; /* Auto height for responsiveness */
+    }
+
+    .hero-content {
+        padding: 20px; /* Adjusted padding */
+    }
+
+    .hero h1 {
+        font-size: 2.5em; /* Reduced heading size */
+    }
+
+    .hero p {
+        font-size: 1.2em; /* Reduced paragraph size */
+    }
+}

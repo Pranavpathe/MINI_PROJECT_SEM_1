@@ -1,0 +1,149 @@
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #4CAF50;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px;
+    transition: background 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: white;
+    color: #4CAF50;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero-science {
+    background: url('https://source.unsplash.com/1600x800/?science') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative; /* Added to position the overlay */
+}
+
+.hero-science::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    z-index: 1; /* Ensure overlay is above the background */
+}
+
+.hero-content {
+    position: relative; /* Position content above overlay */
+    z-index: 2; /* Ensure text is above the overlay */
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+}
+
+/* Science Courses Section */
+.science-courses {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.science-courses h2 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin-bottom: 40px;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.course-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.course-box h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.course-box p {
+    font-size: 1em;
+    color: #666;
+}
+
+.details-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+.details-btn:hover {
+    background-color: #388E3C;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}

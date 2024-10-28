@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>EduNavigator</title>
+</head> 
+<body> <nav></nav>
+    <header>
+        <div class="navbar">
+            <div class="logo">EduNavigator</div>
+            <ul class="nav-links">
+                <li><a href="EduNavigator.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Discover Your Future Path</h1>
+            <p>Explore various streams and find the right career for you.</p>
+            <a href="#" class="quiz-btn" id="startQuiz">QUIZ</a>
+        </div>
+    </div>
+
+    <!-- Login / Sign Up Button Section -->
+    <div class="login-section">
+        <a href="login.html" class="login-btn" >Login / Sign Up</a> <!-- New Login/Sign Up button -->
+    </div>
+
+    <section class="streams">
+        <h2>Explore Streams</h2>
+        <div class="stream-grid">
+            <div class="stream-box">
+                <img src="art.jpg" alt="Arts">
+                <h3>Arts</h3>
+                <p>Explore your creativity through various art forms.</p>
+                <a href="art.html" class="btn">View Roadmap</a>
+            </div>
+            <div class="stream-box">
+                <img src="commerce.jpeg" alt="Commerce">
+                <h3>Commerce</h3>
+                <p>Understand the world of business and finance.</p>
+                <a href="Commerce.html" class="btn">View Roadmap</a>
+            </div>
+            <div class="stream-box">
+                <img src="science.jpeg" alt="Science">
+                <h3>Science</h3>
+                <p>Dive into the mysteries of the natural world.</p>
+                <a href="Science.html" class="btn">View Roadmap</a>
+            </div>
+        </div>
+    </section>
+
+   <!-- Stream Selection Modal -->
+<div id="streamModal" class="modal">
+    <div class="modal-content">
+        <h2>Select Your Stream</h2>
+        <div>
+            <label><input type="radio" name="stream" value="science"> Science</label><br>
+            <label><input type="radio" name="stream" value="commerce"> Commerce</label><br>
+            <label><input type="radio" name="stream" value="arts"> Arts</label><br>
+        </div>
+        <button id="selectStream" class="btn">Continue</button>
+    </div>
+</div>
+
+<!-- Quiz Modal with Close Button -->
+<div id="quizModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeQuiz">&times;</span>
+        <h2>Take the Quiz</h2>
+        <div id="quiz"></div>
+        <button id="submitQuiz" class="btn">Submit</button>
+        <div id="results"></div>
+        <div id="interestMessage"></div>
+    </div>
+</div>
+
+<!-- Quiz Modal -->
+<div id="quizModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeQuiz">&times;</span>
+        <h2>Take the Quiz</h2>
+        <div id="quiz"></div>
+        <button id="submitQuiz" class="btn">Submit</button>
+        <div id="results"></div>
+        <div id="interestMessage"></div> <!-- Message container for personalized results -->
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2024 EduNavigator. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
